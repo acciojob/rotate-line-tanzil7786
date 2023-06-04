@@ -1,9 +1,29 @@
+.container{
+    width:300px;
+    height:300px;
+    border:2px solid black;
+    /* display:flex;
+    justify-content: center;
+    align-items: center; */
+    position: relative;
+}
 
-@keyframes rotateAnimation {
-    from {
-        transform: rotate(0deg);
+#line{
+    /* border:2px solid black; */
+    width:200px;
+    height:2px;
+    background-color:rgb(0, 0, 0);
+    transform:rotate(50deg);
+    animation: move 5s linear infinite forwards;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+@keyframes move{
+    from{
+        transform:rotate(0deg);
     }
-    to {
-        transform: rotate(360deg);
+    to{
+        transform:rotate(360deg);
     }
 }
